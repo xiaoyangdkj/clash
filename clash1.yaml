@@ -1,0 +1,349 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies:
+  - {name: 新加坡, server: 84.17.38.144, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: gTYdduTTEBBdVZ4LcBnT, udp: true}
+  - {name: 印度, server: 192.46.210.73, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 印度 2, server: 192.46.210.73, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 印度 3, server: 192.46.210.73, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 挪威, server: 46.29.218.6, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国, server: 66.55.92.101, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW, udp: true}
+  - {name: 德国, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
+  - {name: 英国, server: 198.244.150.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
+  - {name: 美国 2, server: 142.202.48.43, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国 3, server: 142.202.48.43, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大, server: 134.195.196.51, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国 4, server: 142.202.48.43, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 加拿大 2, server: 134.195.196.51, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 挪威 2, server: 46.29.218.6, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 美国 5, server: 70.39.71.2, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV, udp: true}
+  - {name: 乌克兰, server: 37.19.218.197, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER, udp: true}
+  - {name: 美国 6, server: 23.226.131.146, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP, udp: true}
+  - {name: 英国 2, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 马尔他, server: 185.89.238.36, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 加拿大 3, server: 134.195.196.51, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 英国 3, server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国 7, server: 213.174.129.4, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 马其顿, server: 46.183.185.15, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 葡萄牙, server: 185.90.57.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf, udp: true}
+  - {name: 芬兰, server: 185.212.149.152, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: SxFvGWWUtEjyQnGbggq2, udp: true}
+  - {name: 挪威 3, server: 46.29.218.6, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 希腊, server: 185.51.134.210, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: mTrN2fMYeWJwrkWpTnL2, udp: true}
+  - {name: 阿尔巴尼亚, server: 31.171.153.178, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 挪威 4, server: 46.29.218.6, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 澳大利亚, server: 194.14.208.110, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 英国 4, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 香港, server: 118.107.244.113, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+proxy-groups:
+  - name: ✈️ 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🚀 手动切换
+    type: select
+    proxies:
+      - 新加坡
+      - 印度
+      - 印度 2
+      - 印度 3
+      - 挪威
+      - 美国
+      - 德国
+      - 英国
+      - 美国 2
+      - 美国 3
+      - 加拿大
+      - 美国 4
+      - 加拿大 2
+      - 挪威 2
+      - 美国 5
+      - 乌克兰
+      - 美国 6
+      - 英国 2
+      - 马尔他
+      - 加拿大 3
+      - 英国 3
+      - 美国 7
+      - 马其顿
+      - 葡萄牙
+      - 芬兰
+      - 挪威 3
+      - 希腊
+      - 阿尔巴尼亚
+      - 挪威 4
+      - 澳大利亚
+      - 英国 4
+      - 香港
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 新加坡
+      - 印度
+      - 印度 2
+      - 印度 3
+      - 挪威
+      - 美国
+      - 德国
+      - 英国
+      - 美国 2
+      - 美国 3
+      - 加拿大
+      - 美国 4
+      - 加拿大 2
+      - 挪威 2
+      - 美国 5
+      - 乌克兰
+      - 美国 6
+      - 英国 2
+      - 马尔他
+      - 加拿大 3
+      - 英国 3
+      - 美国 7
+      - 马其顿
+      - 葡萄牙
+      - 芬兰
+      - 挪威 3
+      - 希腊
+      - 阿尔巴尼亚
+      - 挪威 4
+      - 澳大利亚
+      - 英国 4
+      - 香港
+  - name: 🔯 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 新加坡
+      - 印度
+      - 印度 2
+      - 印度 3
+      - 挪威
+      - 美国
+      - 德国
+      - 英国
+      - 美国 2
+      - 美国 3
+      - 加拿大
+      - 美国 4
+      - 加拿大 2
+      - 挪威 2
+      - 美国 5
+      - 乌克兰
+      - 美国 6
+      - 英国 2
+      - 马尔他
+      - 加拿大 3
+      - 英国 3
+      - 美国 7
+      - 马其顿
+      - 葡萄牙
+      - 芬兰
+      - 挪威 3
+      - 希腊
+      - 阿尔巴尼亚
+      - 挪威 4
+      - 澳大利亚
+      - 英国 4
+      - 香港
+  - name: 🔮 负载均衡
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - DIRECT
+  - name: 📲 电报消息
+    type: select
+    proxies:
+      - ✈️ 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - ✈️ 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 💻 奈飞视频
+    type: select
+    proxies:
+      - 💿 奈飞节点
+      - ✈️ 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - ✈️ 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
+  - name: 📺 哔哩哔哩
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🇨🇳 台湾节点
+      - 🇭🇰 香港节点
+  - name: 🎮 游戏平台
+    type: select
+    proxies:
+      - DIRECT
+      - 🎲 游戏节点
+      - ✈️ 节点选择
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软云盘
+    type: select
+    proxies:
+      - DIRECT
+      - ✈️ 节点选择
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
+  - name: ⌨️ 微软服务
+    type: select
+    proxies:
+      - DIRECT
+      - ✈️ 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - DIRECT
+      - ✈️ 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🔍️ 谷歌服务
+    type: select
+    proxies:
+      - DIRECT
+      - ✈️ 节点选择
+      - 🚀 手动切换
+  - name: 🎵 网易音乐
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - ✈️ 节点选择
+      - ♻️ 自动选择
+      - 🔮 负载均衡
+      - DIRECT
+      - 🚀 手动切换
+  - name: 💿 奈飞节点
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🎲 游戏节点
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🇭🇰 香港节点
+    type: select
+    proxies:
+      - 香港
+  - name: 🇯🇵 日本节点
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🇺🇲 美国节点
+    type: select
+    proxies:
+      - 美国
+      - 美国 2
+      - 美国 3
+      - 美国 4
+      - 美国 5
+      - 美国 6
+      - 美国 7
+  - name: 🇨🇳 台湾节点
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🇸🇬 狮城节点
+    type: select
+    proxies:
+      - 新加坡
+  - name: 🇰🇷 韩国节点
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - ✈️ 节点选择
+      - ♻️ 自动选择
+rules:
+ - DOMAIN-KEYWORD,jetbrains,✈️ 节点选择
+ - DOMAIN-KEYWORD,gradle,✈️ 节点选择
+ - DOMAIN-KEYWORD,notion,✈️ 节点选择
+ - DOMAIN-KEYWORD,wodetaylor,✈️ 节点选择
+ - DOMAIN-KEYWORD,mathworks,✈️ 节点选择
+ - DOMAIN-SUFFIX,bkcloud.icu,✈️ 节点选择
+ - DOMAIN-SUFFIX,sm.ms,✈️ 节点选择
+ - DOMAIN-KEYWORD,v6,🎯 全球直连
+ - DOMAIN-KEYWORD,euserv,🎯 全球直连
+ - DOMAIN-SUFFIX,panel.hope140.live,🎯 全球直连
+ - DOMAIN-SUFFIX,api.hope140.live,🎯 全球直连
+ - DOMAIN-KEYWORD,edu.cn,🎯 全球直连
+ - GEOIP,CN,🎯 全球直连
+ - MATCH,🐟 漏网之鱼
