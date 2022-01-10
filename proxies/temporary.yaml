@@ -1,0 +1,3 @@
+proxies:
+  - {name: 🕵🏻‍♂️这里啥都没有, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🙇🏻‍♂️晚一点再来吧, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
