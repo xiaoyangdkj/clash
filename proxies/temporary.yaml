@@ -1,679 +1,1004 @@
-#!MANAGED-CONFIG https://poigvvv.xyz//link/RdCOUjrSDLv3TXsv?clash=1
-
-#---------------------------------------------------#
-## 上次更新于：2022-01-12 12:42:26
-#---------------------------------------------------#
-
+# By t.me/lqmoe 
+# From t.me/vpnpool
+# Channel t.me/vpnhat
 port: 7890
 socks-port: 7891
 redir-port: 7892
-allow-lan: false
-mode: rule
+allow-lan: true
+mode: Rule
 log-level: silent
-external-controller: '0.0.0.0:9090'
+external-controller: '127.0.0.1:9090'
 secret: ''
+dns:
+  enable: true
+  ipv6: false
+  listen: '0.0.0.0:53'
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 119.29.29.29
+    - 223.5.5.5
+    - 'tls://dns.rubyfish.cn:853'
+    - 'tls://cloudflare-dns.com:853'
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
 proxies:
   -
-    name: '🇨🇦 加拿大 | A | 1 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 655
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: 'By t.me/lqmoe'
+    type: ssr
+    server: directhkt4.host.mznode.link
+    port: 574
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: t.me/lqmoe
+    flags: HK
   -
-    name: '🇨🇦 加拿大 | A | 2 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 629
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: 'From t.me/vpnpool'
+    type: ssr
+    server: freehkt2.mznode.link
+    port: 574
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: t.me/vpnpool
+    flags: HK
   -
-    name: '🇨🇦 加拿大 | A | 3 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 630
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-AR-阿根廷-1-2倍-视频'
+    type: ssr
+    server: aiashar1.mznode.link
+    port: 1651
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: AR
   -
-    name: '🇨🇦 加拿大 | A | 4 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 631
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-BR-巴西-1-2.0倍-视频'
+    type: ssr
+    server: aiashbr1.mznode.link
+    port: 1631
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: BR
   -
-    name: '🇮🇳 印度 | A | 1 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 656
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-DE-德国-1-2.0倍-视频'
+    type: ssr
+    server: aiade1.vip.mznode.link
+    port: 1621
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: DE
   -
-    name: '🇮🇳 印度 | A | 2 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 626
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-FR-法国-1-2.0倍-视频'
+    type: ssr
+    server: aiabjfr1.mznode.link
+    port: 1461
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: FR
   -
-    name: '🇮🇳 印度 | A | 3 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 627
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-Game-JP-沪日-1-15倍-游戏'
+    type: ssr
+    server: aiajp1.game.mznode.link
+    port: 1461
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: JP
   -
-    name: '🇮🇳 印度 | A | 4 | @xiaobaicloud | '
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 628
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-Game-SGP-广新-1-15倍-游戏'
+    type: ssr
+    server: aiasgp1.game.mznode.link
+    port: 1511
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: SGP
   -
-    name: '🇩🇪 德国 | A | 1 | @xiaobaicloud | '
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 657
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-Game-US-沪美-1-15倍-游戏'
+    type: ssr
+    server: aiaus1.game.mznode.link
+    port: 1411
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: US
   -
-    name: '🇩🇪 德国 | A | 2 | @xiaobaicloud | '
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 635
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-HK-香港-1-2.0倍-视频'
+    type: ssr
+    server: bgphk1.vip.mznode.link
+    port: 574
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
   -
-    name: '🇩🇪 德国 | A | 3 | @xiaobaicloud | '
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 636
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-HK-香港-2-2.0倍-视频'
+    type: ssr
+    server: bgphk2.vip.mznode.link
+    port: 575
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
   -
-    name: '🇩🇪 德国 | A | 4 | @xiaobaicloud | '
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 637
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-HK-香港-3-2.0倍-视频'
+    type: ssr
+    server: bgphk3.vip.mznode.link
+    port: 576
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
   -
-    name: '🇸🇬 新加坡 | A | 1 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 850
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-HK-香港-4-2.0倍-视频'
+    type: ssr
+    server: bgphk4.vip.mznode.link
+    port: 577
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
   -
-    name: '🇸🇬 新加坡 | A | 2 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 608
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-HK-香港-5-2.0倍-视频'
+    type: ssr
+    server: bgphk5.vip.mznode.link
+    port: 578
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
   -
-    name: '🇸🇬 新加坡 | A | 3 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 609
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-HK-香港-6-2.0倍-视频'
+    type: ssr
+    server: bgphk6.vip.mznode.link
+    port: 579
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
   -
-    name: '🇸🇬 新加坡 | A | 4 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 610
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-HK-香港-7-2.0倍-视频'
+    type: ssr
+    server: bgphk7.vip.mznode.link
+    port: 580
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
   -
-    name: '🇸🇬 新加坡 | B | 1 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 851
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-HK-香港-8-2.0倍-视频'
+    type: ssr
+    server: bgphk8.vip.mznode.link
+    port: 581
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
   -
-    name: '🇸🇬 新加坡 | B | 2 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 611
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-HK-香港-9-2.0倍-视频'
+    type: ssr
+    server: bgphk9.vip.mznode.link
+    port: 582
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
   -
-    name: '🇸🇬 新加坡 | B | 3 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 612
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-HK-香港-A-2.0倍-视频'
+    type: ssr
+    server: bgphka.vip.mznode.link
+    port: 583
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
   -
-    name: '🇸🇬 新加坡 | B | 4 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 613
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-JP-日本-1-2.0倍-视频'
+    type: ssr
+    server: relayjp1.vip.mznode.link
+    port: 1451
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: JP
   -
-    name: '🇸🇬 新加坡 | C | 1 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 852
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-JP-日本-2-2.0倍-视频'
+    type: ssr
+    server: relayjp2.vip.mznode.link
+    port: 1452
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: JP
   -
-    name: '🇸🇬 新加坡 | C | 2 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 614
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-JP-日本-3-2.0倍-视频'
+    type: ssr
+    server: relayjp3.vip.mznode.link
+    port: 1453
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: JP
   -
-    name: '🇸🇬 新加坡 | C | 3 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 615
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-JP-日本-4-2.0倍-视频'
+    type: ssr
+    server: relayjp4.vip.mznode.link
+    port: 1454
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: JP
   -
-    name: '🇸🇬 新加坡 | C | 4 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 616
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-KR-韩国-1-2.0倍-视频'
+    type: ssr
+    server: qdcukr1.vip.mznode.link
+    port: 1551
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: 280d593947.microsoft.com
+    flags: KR
   -
-    name: '🇸🇬 新加坡 | D | 1 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 853
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-KR-韩国-2-2.0倍-视频'
+    type: ssr
+    server: shkr2.vip.mznode.link
+    port: 1552
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: 280d593947.microsoft.com
+    flags: KR
   -
-    name: '🇸🇬 新加坡 | D | 2 | @xiaobaicloud |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 617
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-PH-菲律宾-1-2.0倍-视频'
+    type: ssr
+    server: aiaph1.mznode.link
+    port: 1641
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: PH
   -
-    name: '🇸🇬 新加坡 | D | 3 | @xiaobaicloud | '
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 618
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-RU-俄罗斯-1-2.0倍-视频'
+    type: ssr
+    server: aiaru1.mznode.link
+    port: 1601
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: RU
   -
-    name: '🇺🇲 美国 | A | 1 | @xiaobaicloud | 流媒體解鎖 |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 855
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-SGP-新加坡-1-2.0倍-视频'
+    type: ssr
+    server: relaysgp1.vip.mznode.link
+    port: 1501
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: SGP
   -
-    name: "🇺🇲 美国 | A | 2 | @xiaobaicloud | 流媒體解鎖 |\t"
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 865
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-SGP-新加坡-2-2.0倍-视频'
+    type: ssr
+    server: relaysgp2.vip.mznode.link
+    port: 1502
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: SGP
   -
-    name: "🇺🇲 美国 | A | 3 | @xiaobaicloud | 流媒體解鎖 |\t"
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 866
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-SGP-新加坡-3-2.0倍-视频'
+    type: ssr
+    server: relaysgp3.vip.mznode.link
+    port: 1503
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: SGP
   -
-    name: "🇺🇲 美国 | A | 4 | @xiaobaicloud | 流媒體解鎖 |\t"
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 867
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-SGP-新加坡-4-2.0倍-视频'
+    type: ssr
+    server: relaysgp4.vip.mznode.link
+    port: 1504
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: SGP
   -
-    name: '🇺🇲 美国 | 体验套餐 | A | 1 | 2.0X | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 643
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-TW-台湾-1-2.0倍-视频'
+    type: ssr
+    server: aiatw1.mznode.link
+    port: 1201
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: TW
   -
-    name: '🇺🇲 美国 | 体验套餐 | Steam商店专用节点 | 限速2兆 | 0倍率 | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |'
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 700
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-TW-台湾-2-2.0倍-视频'
+    type: ssr
+    server: aiatw2.mznode.link
+    port: 1202
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: TW
   -
-    name: '🇬🇧 英国 | A | 1 | @xiaobaicloud | '
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 658
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-TW-台湾-3-2.0倍-视频'
+    type: ssr
+    server: aiatw3.mznode.link
+    port: 1203
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: TW
   -
-    name: '🇬🇧 英国 | A | 2 | @xiaobaicloud | '
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 623
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-TW-台湾-4-2.0倍-视频'
+    type: ssr
+    server: aiatw4.mznode.link
+    port: 1204
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: TW
   -
-    name: '🇬🇧 英国 | A | 3 | @xiaobaicloud | '
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 624
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-TW-台湾-5-2.0倍-视频'
+    type: ssr
+    server: aiatw5.mznode.link
+    port: 1205
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: TW
   -
-    name: '🇬🇧 英国 | A | 4 | @xiaobaicloud | '
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 625
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-TW-台湾-6-2.0倍-视频'
+    type: ssr
+    server: aiatw6.mznode.link
+    port: 1206
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: TW
   -
-    name: '🇳🇱 荷兰 | A | 1 | @xiaobaicloud | '
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 659
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-UK-英国-1-2倍-视频'
+    type: ssr
+    server: cucsuk1.vip.mznode.link
+    port: 1351
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: GB
   -
-    name: '🇳🇱 荷兰 | A | 2 | @xiaobaicloud | '
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 632
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-UK-英国-2-2倍-视频'
+    type: ssr
+    server: shuk2.vip.mznode.link
+    port: 1352
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: GB
   -
-    name: '🇳🇱 荷兰 | A | 3 | @xiaobaicloud | '
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 633
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-US-美国-1-2.0倍-视频'
+    type: ssr
+    server: relayus1.vip.mznode.link
+    port: 1401
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: US
   -
-    name: '🇳🇱 荷兰 | A | 4 | @xiaobaicloud | '
-    type: vmess
-    server: qinton001.bmbai.buzz
-    port: 634
-    uuid: cff4b44f-38e3-3446-9d50-8a4f0fd074c6
-    alterId: 2
-    cipher: auto
+    name: '[大麦]-AIA-US-美国-2-2.0倍-视频'
+    type: ssr
+    server: relayus2.vip.mznode.link
+    port: 1402
+    cipher: chacha20-ietf
+    password: mtbv8n
     udp: true
-    servername: 1.baiyun.pw
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 1.baiyun.pw
-    tls: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: US
+  -
+    name: '[大麦]-AIA-US-美国-3-2.0倍-视频'
+    type: ssr
+    server: relayus3.vip.mznode.link
+    port: 1403
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: US
+  -
+    name: '[大麦]-AIA-US-美国-4-2.0倍-视频'
+    type: ssr
+    server: relayus4.vip.mznode.link
+    port: 1404
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: 280d593947.microsoft.com
+    flags: US
+  -
+    name: '[大麦]-AIA-VN-越南-1-2.0倍-视频'
+    type: ssr
+    server: aiavnd1.vip.mznode.link
+    port: 1611
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: VN
+  -
+    name: '[小麦]-AIA-Game-HK-广港-1-15倍-游戏'
+    type: ssr
+    server: aiahk1.game.mznode.link
+    port: 574
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
+  -
+    name: '[小麦]-中继-HK-香港-1-2.0倍-视频'
+    type: ssr
+    server: bgphzhk1.host.mznode.link
+    port: 574
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
+  -
+    name: '[小麦]-中继-HK-香港-2-2.0倍-视频'
+    type: ssr
+    server: bgphzhk2.host.mznode.link
+    port: 575
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
+  -
+    name: '[小麦]-中继-HK-香港-3-2.0倍-视频'
+    type: ssr
+    server: bgphzhk3.host.mznode.link
+    port: 576
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
+  -
+    name: '[小麦]-中继-HK-香港-4-2.0倍-视频'
+    type: ssr
+    server: bgphzhk4.host.mznode.link
+    port: 577
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
+  -
+    name: '[小麦]-中继-JP-日本-1-视频'
+    type: ssr
+    server: relayjp1.host.mznode.link
+    port: 1251
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: JP
+  -
+    name: '[小麦]-中继-JP-日本-2-视频'
+    type: ssr
+    server: relayjp2.host.mznode.link
+    port: 1252
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: JP
+  -
+    name: '[小麦]-中继-JP-日本-3-视频'
+    type: ssr
+    server: relayjp3.host.mznode.link
+    port: 1253
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: JP
+  -
+    name: '[小麦]-中继-JP-日本-4-视频'
+    type: ssr
+    server: relayjp4.host.mznode.link
+    port: 1254
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: JP
+  -
+    name: '[小麦]-中继-SGP-新加坡-1-2.0倍-视频'
+    type: ssr
+    server: relaysgp1.host.mznode.link
+    port: 1501
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: SGP
+  -
+    name: '[小麦]-中继-SGP-新加坡-2-2.0倍-视频'
+    type: ssr
+    server: relaysgp2.host.mznode.link
+    port: 1502
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: SGP
+  -
+    name: '[小麦]-中继-SGP-新加坡-3-2.0倍-视频'
+    type: ssr
+    server: relaysgp3.host.mznode.link
+    port: 1503
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: SGP
+  -
+    name: '[小麦]-中继-TR-土耳其-1-买买买'
+    type: ssr
+    server: tr1.host.mznode.link
+    port: 1561
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: TR
+  -
+    name: '[小麦]-中继-TW-台湾-1-2.0倍-视频'
+    type: ssr
+    server: bgpshtw1.host.mznode.link
+    port: 1201
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: TW
+  -
+    name: '[小麦]-中继-TW-台湾-2-2.0倍-视频'
+    type: ssr
+    server: bgpshtw2.host.mznode.link
+    port: 1202
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: TW
+  -
+    name: '[小麦]-中继-TW-台湾-3-2.0倍-视频'
+    type: ssr
+    server: bgpshtw3.host.mznode.link
+    port: 1203
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: TW
+  -
+    name: '[小麦]-中继-TW-台湾-4-2.0倍-视频'
+    type: ssr
+    server: bgpshtw4.host.mznode.link
+    port: 1204
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: TW
+  -
+    name: '[小麦]-中继-US-美国-1-2.0倍-视频'
+    type: ssr
+    server: bgpshus1.host.mznode.link
+    port: 1301
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: US
+  -
+    name: '[小麦]-中继-US-美国-2-2.0倍-视频'
+    type: ssr
+    server: bgpshus2.host.mznode.link
+    port: 1302
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: US
+  -
+    name: '[小麦]-中继-US-美国-3-2.0倍-视频'
+    type: ssr
+    server: bgpshus3.host.mznode.link
+    port: 1303
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: US
+  -
+    name: '[小麦]-中继-US-美国-4-2.0倍-视频'
+    type: ssr
+    server: bgpshus4.host.mznode.link
+    port: 1304
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: US
+  -
+    name: '[小麦]-精品-HK-香港-1-2.0倍-视频'
+    type: ssr
+    server: dmhk1.host.mznode.link
+    port: 574
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
+  -
+    name: '[小麦]-精品-HK-香港-2-2.0倍-视频'
+    type: ssr
+    server: dmhk2.host.mznode.link
+    port: 575
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
+  -
+    name: '[小麦]-精品-HK-香港-3-2.0倍-视频'
+    type: ssr
+    server: dmhk3.host.mznode.link
+    port: 576
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
+  -
+    name: '[小麦]-精品-HK-香港-4-2.0倍-视频'
+    type: ssr
+    server: dmhk4.host.mznode.link
+    port: 577
+    cipher: chacha20-ietf
+    password: mtbv8n
+    udp: true
+    protocol: auth_aes128_md5
+    protocol-param: '93947:SKKSas'
+    obfs: plain
+    obfs-param: b43e313.microsoft.com
+    flags: HK
 proxy-groups:
   -
     name: 🔰国外流量
     type: select
     proxies:
-      - '🇨🇦 加拿大 | A | 1 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 2 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 3 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 4 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 1 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 2 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 3 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 4 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 1 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 2 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 3 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 4 | @xiaobaicloud | '
-      - '🇸🇬 新加坡 | A | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 3 | @xiaobaicloud | '
-      - '🇺🇲 美国 | A | 1 | @xiaobaicloud | 流媒體解鎖 |'
-      - "🇺🇲 美国 | A | 2 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - "🇺🇲 美国 | A | 3 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - "🇺🇲 美国 | A | 4 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - '🇺🇲 美国 | 体验套餐 | A | 1 | 2.0X | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |'
-      - '🇺🇲 美国 | 体验套餐 | Steam商店专用节点 | 限速2兆 | 0倍率 | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |'
-      - '🇬🇧 英国 | A | 1 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 2 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 3 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 4 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 1 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 2 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 3 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 4 | @xiaobaicloud | '
+      - 'By t.me/lqmoe'
+      - 'From t.me/vpnpool'
+      - '[大麦]-AIA-AR-阿根廷-1-2倍-视频'
+      - '[大麦]-AIA-BR-巴西-1-2.0倍-视频'
+      - '[大麦]-AIA-DE-德国-1-2.0倍-视频'
+      - '[大麦]-AIA-FR-法国-1-2.0倍-视频'
+      - '[大麦]-AIA-Game-JP-沪日-1-15倍-游戏'
+      - '[大麦]-AIA-Game-SGP-广新-1-15倍-游戏'
+      - '[大麦]-AIA-Game-US-沪美-1-15倍-游戏'
+      - '[大麦]-AIA-HK-香港-1-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-2-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-3-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-4-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-5-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-6-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-7-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-8-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-9-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-A-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-1-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-2-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-3-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-4-2.0倍-视频'
+      - '[大麦]-AIA-KR-韩国-1-2.0倍-视频'
+      - '[大麦]-AIA-KR-韩国-2-2.0倍-视频'
+      - '[大麦]-AIA-PH-菲律宾-1-2.0倍-视频'
+      - '[大麦]-AIA-RU-俄罗斯-1-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-1-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-2-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-3-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-4-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-1-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-2-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-3-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-4-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-5-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-6-2.0倍-视频'
+      - '[大麦]-AIA-UK-英国-1-2倍-视频'
+      - '[大麦]-AIA-UK-英国-2-2倍-视频'
+      - '[大麦]-AIA-US-美国-1-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-2-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-3-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-4-2.0倍-视频'
+      - '[大麦]-AIA-VN-越南-1-2.0倍-视频'
+      - '[小麦]-AIA-Game-HK-广港-1-15倍-游戏'
+      - '[小麦]-中继-HK-香港-1-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-2-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-3-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-4-2.0倍-视频'
+      - '[小麦]-中继-JP-日本-1-视频'
+      - '[小麦]-中继-JP-日本-2-视频'
+      - '[小麦]-中继-JP-日本-3-视频'
+      - '[小麦]-中继-JP-日本-4-视频'
+      - '[小麦]-中继-SGP-新加坡-1-2.0倍-视频'
+      - '[小麦]-中继-SGP-新加坡-2-2.0倍-视频'
+      - '[小麦]-中继-SGP-新加坡-3-2.0倍-视频'
+      - '[小麦]-中继-TR-土耳其-1-买买买'
+      - '[小麦]-中继-TW-台湾-1-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-2-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-3-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-4-2.0倍-视频'
+      - '[小麦]-中继-US-美国-1-2.0倍-视频'
+      - '[小麦]-中继-US-美国-2-2.0倍-视频'
+      - '[小麦]-中继-US-美国-3-2.0倍-视频'
+      - '[小麦]-中继-US-美国-4-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-1-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-2-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-3-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-4-2.0倍-视频'
       - 🚀直接连接
   -
     name: ⚓️其他流量
@@ -686,231 +1011,371 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
-      - '🇨🇦 加拿大 | A | 1 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 2 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 3 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 4 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 1 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 2 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 3 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 4 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 1 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 2 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 3 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 4 | @xiaobaicloud | '
-      - '🇸🇬 新加坡 | A | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 3 | @xiaobaicloud | '
-      - '🇺🇲 美国 | A | 1 | @xiaobaicloud | 流媒體解鎖 |'
-      - "🇺🇲 美国 | A | 2 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - "🇺🇲 美国 | A | 3 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - "🇺🇲 美国 | A | 4 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - '🇺🇲 美国 | 体验套餐 | A | 1 | 2.0X | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |'
-      - '🇺🇲 美国 | 体验套餐 | Steam商店专用节点 | 限速2兆 | 0倍率 | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |'
-      - '🇬🇧 英国 | A | 1 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 2 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 3 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 4 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 1 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 2 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 3 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 4 | @xiaobaicloud | '
+      - 'By t.me/lqmoe'
+      - 'From t.me/vpnpool'
+      - '[大麦]-AIA-AR-阿根廷-1-2倍-视频'
+      - '[大麦]-AIA-BR-巴西-1-2.0倍-视频'
+      - '[大麦]-AIA-DE-德国-1-2.0倍-视频'
+      - '[大麦]-AIA-FR-法国-1-2.0倍-视频'
+      - '[大麦]-AIA-Game-JP-沪日-1-15倍-游戏'
+      - '[大麦]-AIA-Game-SGP-广新-1-15倍-游戏'
+      - '[大麦]-AIA-Game-US-沪美-1-15倍-游戏'
+      - '[大麦]-AIA-HK-香港-1-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-2-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-3-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-4-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-5-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-6-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-7-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-8-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-9-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-A-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-1-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-2-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-3-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-4-2.0倍-视频'
+      - '[大麦]-AIA-KR-韩国-1-2.0倍-视频'
+      - '[大麦]-AIA-KR-韩国-2-2.0倍-视频'
+      - '[大麦]-AIA-PH-菲律宾-1-2.0倍-视频'
+      - '[大麦]-AIA-RU-俄罗斯-1-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-1-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-2-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-3-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-4-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-1-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-2-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-3-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-4-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-5-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-6-2.0倍-视频'
+      - '[大麦]-AIA-UK-英国-1-2倍-视频'
+      - '[大麦]-AIA-UK-英国-2-2倍-视频'
+      - '[大麦]-AIA-US-美国-1-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-2-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-3-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-4-2.0倍-视频'
+      - '[大麦]-AIA-VN-越南-1-2.0倍-视频'
+      - '[小麦]-AIA-Game-HK-广港-1-15倍-游戏'
+      - '[小麦]-中继-HK-香港-1-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-2-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-3-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-4-2.0倍-视频'
+      - '[小麦]-中继-JP-日本-1-视频'
+      - '[小麦]-中继-JP-日本-2-视频'
+      - '[小麦]-中继-JP-日本-3-视频'
+      - '[小麦]-中继-JP-日本-4-视频'
+      - '[小麦]-中继-SGP-新加坡-1-2.0倍-视频'
+      - '[小麦]-中继-SGP-新加坡-2-2.0倍-视频'
+      - '[小麦]-中继-SGP-新加坡-3-2.0倍-视频'
+      - '[小麦]-中继-TR-土耳其-1-买买买'
+      - '[小麦]-中继-TW-台湾-1-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-2-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-3-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-4-2.0倍-视频'
+      - '[小麦]-中继-US-美国-1-2.0倍-视频'
+      - '[小麦]-中继-US-美国-2-2.0倍-视频'
+      - '[小麦]-中继-US-美国-3-2.0倍-视频'
+      - '[小麦]-中继-US-美国-4-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-1-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-2-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-3-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-4-2.0倍-视频'
   -
     name: 🎬Youtube
     type: select
     proxies:
       - 🔰国外流量
-      - '🇨🇦 加拿大 | A | 1 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 2 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 3 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 4 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 1 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 2 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 3 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 4 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 1 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 2 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 3 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 4 | @xiaobaicloud | '
-      - '🇸🇬 新加坡 | A | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 3 | @xiaobaicloud | '
-      - '🇺🇲 美国 | A | 1 | @xiaobaicloud | 流媒體解鎖 |'
-      - "🇺🇲 美国 | A | 2 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - "🇺🇲 美国 | A | 3 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - "🇺🇲 美国 | A | 4 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - '🇺🇲 美国 | 体验套餐 | A | 1 | 2.0X | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |'
-      - '🇺🇲 美国 | 体验套餐 | Steam商店专用节点 | 限速2兆 | 0倍率 | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |'
-      - '🇬🇧 英国 | A | 1 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 2 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 3 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 4 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 1 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 2 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 3 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 4 | @xiaobaicloud | '
+      - 'By t.me/lqmoe'
+      - 'From t.me/vpnpool'
+      - '[大麦]-AIA-AR-阿根廷-1-2倍-视频'
+      - '[大麦]-AIA-BR-巴西-1-2.0倍-视频'
+      - '[大麦]-AIA-DE-德国-1-2.0倍-视频'
+      - '[大麦]-AIA-FR-法国-1-2.0倍-视频'
+      - '[大麦]-AIA-Game-JP-沪日-1-15倍-游戏'
+      - '[大麦]-AIA-Game-SGP-广新-1-15倍-游戏'
+      - '[大麦]-AIA-Game-US-沪美-1-15倍-游戏'
+      - '[大麦]-AIA-HK-香港-1-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-2-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-3-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-4-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-5-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-6-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-7-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-8-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-9-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-A-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-1-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-2-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-3-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-4-2.0倍-视频'
+      - '[大麦]-AIA-KR-韩国-1-2.0倍-视频'
+      - '[大麦]-AIA-KR-韩国-2-2.0倍-视频'
+      - '[大麦]-AIA-PH-菲律宾-1-2.0倍-视频'
+      - '[大麦]-AIA-RU-俄罗斯-1-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-1-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-2-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-3-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-4-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-1-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-2-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-3-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-4-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-5-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-6-2.0倍-视频'
+      - '[大麦]-AIA-UK-英国-1-2倍-视频'
+      - '[大麦]-AIA-UK-英国-2-2倍-视频'
+      - '[大麦]-AIA-US-美国-1-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-2-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-3-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-4-2.0倍-视频'
+      - '[大麦]-AIA-VN-越南-1-2.0倍-视频'
+      - '[小麦]-AIA-Game-HK-广港-1-15倍-游戏'
+      - '[小麦]-中继-HK-香港-1-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-2-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-3-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-4-2.0倍-视频'
+      - '[小麦]-中继-JP-日本-1-视频'
+      - '[小麦]-中继-JP-日本-2-视频'
+      - '[小麦]-中继-JP-日本-3-视频'
+      - '[小麦]-中继-JP-日本-4-视频'
+      - '[小麦]-中继-SGP-新加坡-1-2.0倍-视频'
+      - '[小麦]-中继-SGP-新加坡-2-2.0倍-视频'
+      - '[小麦]-中继-SGP-新加坡-3-2.0倍-视频'
+      - '[小麦]-中继-TR-土耳其-1-买买买'
+      - '[小麦]-中继-TW-台湾-1-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-2-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-3-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-4-2.0倍-视频'
+      - '[小麦]-中继-US-美国-1-2.0倍-视频'
+      - '[小麦]-中继-US-美国-2-2.0倍-视频'
+      - '[小麦]-中继-US-美国-3-2.0倍-视频'
+      - '[小麦]-中继-US-美国-4-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-1-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-2-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-3-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-4-2.0倍-视频'
   -
     name: 🎬Netflix
     type: select
     proxies:
       - 🔰国外流量
-      - '🇨🇦 加拿大 | A | 1 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 2 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 3 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 4 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 1 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 2 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 3 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 4 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 1 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 2 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 3 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 4 | @xiaobaicloud | '
-      - '🇸🇬 新加坡 | A | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 3 | @xiaobaicloud | '
-      - '🇺🇲 美国 | A | 1 | @xiaobaicloud | 流媒體解鎖 |'
-      - "🇺🇲 美国 | A | 2 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - "🇺🇲 美国 | A | 3 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - "🇺🇲 美国 | A | 4 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - '🇺🇲 美国 | 体验套餐 | A | 1 | 2.0X | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |'
-      - '🇺🇲 美国 | 体验套餐 | Steam商店专用节点 | 限速2兆 | 0倍率 | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |'
-      - '🇬🇧 英国 | A | 1 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 2 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 3 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 4 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 1 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 2 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 3 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 4 | @xiaobaicloud | '
+      - 'By t.me/lqmoe'
+      - 'From t.me/vpnpool'
+      - '[大麦]-AIA-AR-阿根廷-1-2倍-视频'
+      - '[大麦]-AIA-BR-巴西-1-2.0倍-视频'
+      - '[大麦]-AIA-DE-德国-1-2.0倍-视频'
+      - '[大麦]-AIA-FR-法国-1-2.0倍-视频'
+      - '[大麦]-AIA-Game-JP-沪日-1-15倍-游戏'
+      - '[大麦]-AIA-Game-SGP-广新-1-15倍-游戏'
+      - '[大麦]-AIA-Game-US-沪美-1-15倍-游戏'
+      - '[大麦]-AIA-HK-香港-1-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-2-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-3-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-4-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-5-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-6-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-7-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-8-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-9-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-A-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-1-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-2-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-3-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-4-2.0倍-视频'
+      - '[大麦]-AIA-KR-韩国-1-2.0倍-视频'
+      - '[大麦]-AIA-KR-韩国-2-2.0倍-视频'
+      - '[大麦]-AIA-PH-菲律宾-1-2.0倍-视频'
+      - '[大麦]-AIA-RU-俄罗斯-1-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-1-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-2-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-3-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-4-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-1-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-2-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-3-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-4-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-5-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-6-2.0倍-视频'
+      - '[大麦]-AIA-UK-英国-1-2倍-视频'
+      - '[大麦]-AIA-UK-英国-2-2倍-视频'
+      - '[大麦]-AIA-US-美国-1-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-2-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-3-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-4-2.0倍-视频'
+      - '[大麦]-AIA-VN-越南-1-2.0倍-视频'
+      - '[小麦]-AIA-Game-HK-广港-1-15倍-游戏'
+      - '[小麦]-中继-HK-香港-1-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-2-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-3-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-4-2.0倍-视频'
+      - '[小麦]-中继-JP-日本-1-视频'
+      - '[小麦]-中继-JP-日本-2-视频'
+      - '[小麦]-中继-JP-日本-3-视频'
+      - '[小麦]-中继-JP-日本-4-视频'
+      - '[小麦]-中继-SGP-新加坡-1-2.0倍-视频'
+      - '[小麦]-中继-SGP-新加坡-2-2.0倍-视频'
+      - '[小麦]-中继-SGP-新加坡-3-2.0倍-视频'
+      - '[小麦]-中继-TR-土耳其-1-买买买'
+      - '[小麦]-中继-TW-台湾-1-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-2-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-3-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-4-2.0倍-视频'
+      - '[小麦]-中继-US-美国-1-2.0倍-视频'
+      - '[小麦]-中继-US-美国-2-2.0倍-视频'
+      - '[小麦]-中继-US-美国-3-2.0倍-视频'
+      - '[小麦]-中继-US-美国-4-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-1-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-2-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-3-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-4-2.0倍-视频'
   -
     name: 🎬哔哩哔哩
     type: select
     proxies:
       - 🚀直接连接
-      - '🇨🇦 加拿大 | A | 1 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 2 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 3 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 4 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 1 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 2 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 3 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 4 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 1 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 2 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 3 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 4 | @xiaobaicloud | '
-      - '🇸🇬 新加坡 | A | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 3 | @xiaobaicloud | '
-      - '🇺🇲 美国 | A | 1 | @xiaobaicloud | 流媒體解鎖 |'
-      - "🇺🇲 美国 | A | 2 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - "🇺🇲 美国 | A | 3 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - "🇺🇲 美国 | A | 4 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - '🇺🇲 美国 | 体验套餐 | A | 1 | 2.0X | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |'
-      - '🇺🇲 美国 | 体验套餐 | Steam商店专用节点 | 限速2兆 | 0倍率 | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |'
-      - '🇬🇧 英国 | A | 1 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 2 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 3 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 4 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 1 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 2 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 3 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 4 | @xiaobaicloud | '
+      - 'By t.me/lqmoe'
+      - 'From t.me/vpnpool'
+      - '[大麦]-AIA-AR-阿根廷-1-2倍-视频'
+      - '[大麦]-AIA-BR-巴西-1-2.0倍-视频'
+      - '[大麦]-AIA-DE-德国-1-2.0倍-视频'
+      - '[大麦]-AIA-FR-法国-1-2.0倍-视频'
+      - '[大麦]-AIA-Game-JP-沪日-1-15倍-游戏'
+      - '[大麦]-AIA-Game-SGP-广新-1-15倍-游戏'
+      - '[大麦]-AIA-Game-US-沪美-1-15倍-游戏'
+      - '[大麦]-AIA-HK-香港-1-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-2-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-3-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-4-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-5-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-6-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-7-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-8-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-9-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-A-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-1-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-2-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-3-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-4-2.0倍-视频'
+      - '[大麦]-AIA-KR-韩国-1-2.0倍-视频'
+      - '[大麦]-AIA-KR-韩国-2-2.0倍-视频'
+      - '[大麦]-AIA-PH-菲律宾-1-2.0倍-视频'
+      - '[大麦]-AIA-RU-俄罗斯-1-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-1-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-2-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-3-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-4-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-1-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-2-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-3-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-4-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-5-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-6-2.0倍-视频'
+      - '[大麦]-AIA-UK-英国-1-2倍-视频'
+      - '[大麦]-AIA-UK-英国-2-2倍-视频'
+      - '[大麦]-AIA-US-美国-1-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-2-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-3-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-4-2.0倍-视频'
+      - '[大麦]-AIA-VN-越南-1-2.0倍-视频'
+      - '[小麦]-AIA-Game-HK-广港-1-15倍-游戏'
+      - '[小麦]-中继-HK-香港-1-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-2-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-3-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-4-2.0倍-视频'
+      - '[小麦]-中继-JP-日本-1-视频'
+      - '[小麦]-中继-JP-日本-2-视频'
+      - '[小麦]-中继-JP-日本-3-视频'
+      - '[小麦]-中继-JP-日本-4-视频'
+      - '[小麦]-中继-SGP-新加坡-1-2.0倍-视频'
+      - '[小麦]-中继-SGP-新加坡-2-2.0倍-视频'
+      - '[小麦]-中继-SGP-新加坡-3-2.0倍-视频'
+      - '[小麦]-中继-TR-土耳其-1-买买买'
+      - '[小麦]-中继-TW-台湾-1-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-2-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-3-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-4-2.0倍-视频'
+      - '[小麦]-中继-US-美国-1-2.0倍-视频'
+      - '[小麦]-中继-US-美国-2-2.0倍-视频'
+      - '[小麦]-中继-US-美国-3-2.0倍-视频'
+      - '[小麦]-中继-US-美国-4-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-1-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-2-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-3-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-4-2.0倍-视频'
   -
     name: 🎬国外媒体
     type: select
     proxies:
       - 🔰国外流量
-      - '🇨🇦 加拿大 | A | 1 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 2 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 3 | @xiaobaicloud |'
-      - '🇨🇦 加拿大 | A | 4 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 1 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 2 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 3 | @xiaobaicloud |'
-      - '🇮🇳 印度 | A | 4 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 1 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 2 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 3 | @xiaobaicloud | '
-      - '🇩🇪 德国 | A | 4 | @xiaobaicloud | '
-      - '🇸🇬 新加坡 | A | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | A | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | B | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 3 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | C | 4 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 1 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 2 | @xiaobaicloud |'
-      - '🇸🇬 新加坡 | D | 3 | @xiaobaicloud | '
-      - '🇺🇲 美国 | A | 1 | @xiaobaicloud | 流媒體解鎖 |'
-      - "🇺🇲 美国 | A | 2 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - "🇺🇲 美国 | A | 3 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - "🇺🇲 美国 | A | 4 | @xiaobaicloud | 流媒體解鎖 |\t"
-      - '🇺🇲 美国 | 体验套餐 | A | 1 | 2.0X | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |'
-      - '🇺🇲 美国 | 体验套餐 | Steam商店专用节点 | 限速2兆 | 0倍率 | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |'
-      - '🇬🇧 英国 | A | 1 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 2 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 3 | @xiaobaicloud | '
-      - '🇬🇧 英国 | A | 4 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 1 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 2 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 3 | @xiaobaicloud | '
-      - '🇳🇱 荷兰 | A | 4 | @xiaobaicloud | '
+      - 'By t.me/lqmoe'
+      - 'From t.me/vpnpool'
+      - '[大麦]-AIA-AR-阿根廷-1-2倍-视频'
+      - '[大麦]-AIA-BR-巴西-1-2.0倍-视频'
+      - '[大麦]-AIA-DE-德国-1-2.0倍-视频'
+      - '[大麦]-AIA-FR-法国-1-2.0倍-视频'
+      - '[大麦]-AIA-Game-JP-沪日-1-15倍-游戏'
+      - '[大麦]-AIA-Game-SGP-广新-1-15倍-游戏'
+      - '[大麦]-AIA-Game-US-沪美-1-15倍-游戏'
+      - '[大麦]-AIA-HK-香港-1-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-2-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-3-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-4-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-5-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-6-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-7-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-8-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-9-2.0倍-视频'
+      - '[大麦]-AIA-HK-香港-A-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-1-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-2-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-3-2.0倍-视频'
+      - '[大麦]-AIA-JP-日本-4-2.0倍-视频'
+      - '[大麦]-AIA-KR-韩国-1-2.0倍-视频'
+      - '[大麦]-AIA-KR-韩国-2-2.0倍-视频'
+      - '[大麦]-AIA-PH-菲律宾-1-2.0倍-视频'
+      - '[大麦]-AIA-RU-俄罗斯-1-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-1-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-2-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-3-2.0倍-视频'
+      - '[大麦]-AIA-SGP-新加坡-4-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-1-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-2-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-3-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-4-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-5-2.0倍-视频'
+      - '[大麦]-AIA-TW-台湾-6-2.0倍-视频'
+      - '[大麦]-AIA-UK-英国-1-2倍-视频'
+      - '[大麦]-AIA-UK-英国-2-2倍-视频'
+      - '[大麦]-AIA-US-美国-1-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-2-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-3-2.0倍-视频'
+      - '[大麦]-AIA-US-美国-4-2.0倍-视频'
+      - '[大麦]-AIA-VN-越南-1-2.0倍-视频'
+      - '[小麦]-AIA-Game-HK-广港-1-15倍-游戏'
+      - '[小麦]-中继-HK-香港-1-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-2-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-3-2.0倍-视频'
+      - '[小麦]-中继-HK-香港-4-2.0倍-视频'
+      - '[小麦]-中继-JP-日本-1-视频'
+      - '[小麦]-中继-JP-日本-2-视频'
+      - '[小麦]-中继-JP-日本-3-视频'
+      - '[小麦]-中继-JP-日本-4-视频'
+      - '[小麦]-中继-SGP-新加坡-1-2.0倍-视频'
+      - '[小麦]-中继-SGP-新加坡-2-2.0倍-视频'
+      - '[小麦]-中继-SGP-新加坡-3-2.0倍-视频'
+      - '[小麦]-中继-TR-土耳其-1-买买买'
+      - '[小麦]-中继-TW-台湾-1-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-2-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-3-2.0倍-视频'
+      - '[小麦]-中继-TW-台湾-4-2.0倍-视频'
+      - '[小麦]-中继-US-美国-1-2.0倍-视频'
+      - '[小麦]-中继-US-美国-2-2.0倍-视频'
+      - '[小麦]-中继-US-美国-3-2.0倍-视频'
+      - '[小麦]-中继-US-美国-4-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-1-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-2-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-3-2.0倍-视频'
+      - '[小麦]-精品-HK-香港-4-2.0倍-视频'
   -
     name: 🍎苹果服务
     type: select
@@ -1469,6 +1934,7 @@ rules:
   - DOMAIN-SUFFIX,wolframalpha.com,🔰国外流量
   - DOMAIN-SUFFIX,x-art.com,🔰国外流量
   - DOMAIN-SUFFIX,yimg.com,🔰国外流量
+  - DOMAIN-SUFFIX,technews.tw,🔰国外流量
   - DOMAIN,api.steampowered.com,🔰国外流量
   - DOMAIN,store.steampowered.com,🔰国外流量
 
