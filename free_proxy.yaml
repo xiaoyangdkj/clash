@@ -36,7 +36,12 @@ proxy-groups:
       - 🐱 Freefq(Github)
       - ⭐️ 碧海免费节点池
       - ✈️ TG频道@Jsnzk
+      - ✈️ TG频道@hkaa0
       - 🚀 临时节点
+  - name: ⚙️ 关于本文件
+    type: select
+    use:
+      - helplist
   - name: ♻️ 延迟最低
     type: url-test
     use:
@@ -69,6 +74,10 @@ proxy-groups:
     type: select
     use:
       - Jsnzk
+  - name: ✈️ TG频道@hkaa0
+    type: select
+    use:
+      - hkaa0
   - name: ⭐️ 碧海免费节点池
     type: select
     use:
@@ -121,6 +130,10 @@ rule-providers:
     path: ./Rules/Adblock
     interval: 86400
 proxy-providers:
+  helplist:
+    type: http
+    url: "https://api.ytoo-163cdn.com/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fxiaoyangdkj%2Fsubscribe%2Fmain%2Fproxies%2Fhelplist.yaml"
+    path: ./Proxy/helplist
   temporary:
     type: http
     url: "https://api.ytoo-163cdn.com/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fxiaoyangdkj%2Fsubscribe%2Fmain%2Fproxies%2Ftemporary.yaml"
@@ -133,6 +146,10 @@ proxy-providers:
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FJsnzkpg%2FJsnzkpg%2FJsnzkpg%2FJsnzkpg&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2Flhl77%2Fsub-ini%2Fmain%2Ftsutsu-mini-gfw.ini&emoji=true&list=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&sort=false&new_name=true"
     path: ./Proxy/Jsnzk
+  hkaa0:
+    type: http
+    url: "https://git.io/JMRUF"
+    path: ./Proxy/hkaa0
   freefq:
     type: http
     url: "https://api.ytoo-163cdn.com/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Ffreefq%2Ffree%2Fmaster%2Fv2"
