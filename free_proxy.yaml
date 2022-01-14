@@ -50,6 +50,7 @@ proxy-groups:
       - Jsnzk
       - freefq
       - bihai
+      - hkaa0
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
   - name: 🔧 失败切换
@@ -60,6 +61,7 @@ proxy-groups:
       - Jsnzk
       - freefq
       - bihai
+      - hkaa0
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
   - name: 📺 油管八度科技
@@ -86,6 +88,12 @@ proxy-groups:
     type: select
     use:
       - temporary
+  - name: 👥 推特&脸书家族
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT
+      - 🌐 全局选择
   - name: 🛑 广告封锁
     type: select
     proxies:
@@ -98,6 +106,7 @@ proxy-groups:
       - DIRECT
       - 🌐 全局选择
 rules:
+- RULE-SET,GlobalChat,👥 推特&脸书家族
 - RULE-SET,Adblock,🛑 广告封锁
 - RULE-SET,ChinaIPs,🎯 全球直连
 - RULE-SET,ChinaIPsBGP,🎯 全球直连
@@ -129,10 +138,16 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/AdvertisingLite/AdvertisingLite_Classical.yaml
     path: ./Rules/Adblock
     interval: 86400
+  GlobalChat:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/xiaoyangdkj/clash_rules/main/lists2/GlobalChat.yaml
+    path: ./Rules/GlobalChat
+    interval: 86400
 proxy-providers:
   helplist:
     type: http
-    url: "https://api.ytoo-163cdn.com/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fxiaoyangdkj%2Fsubscribe%2Fmain%2Fproxies%2Fhelplist.yaml"
+    url: "https://raw.githubusercontent.com/xiaoyangdkj/subscribe/main/proxies/helplist.yaml"
     path: ./Proxy/helplist
   temporary:
     type: http
