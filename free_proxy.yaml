@@ -35,6 +35,7 @@ proxy-groups:
       - 📺 油管八度科技
       - 🐱 Freefq(Github)
       - ⭐️ 碧海免费节点池
+      - ⭐️ 碧海分支
       - ✈️ TG频道@Jsnzk
       - ✈️ TG频道@hkaa0
       - 🚀 临时节点
@@ -50,6 +51,7 @@ proxy-groups:
       - Jsnzk
       - freefq
       - bihai
+      - bihaifenzhi
       - hkaa0
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -61,6 +63,7 @@ proxy-groups:
       - Jsnzk
       - freefq
       - bihai
+      - bihaifenzhi
       - hkaa0
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -84,6 +87,10 @@ proxy-groups:
     type: select
     use:
       - bihai
+  - name: ⭐️ 碧海分支
+    type: select
+    use:
+      - bihaifenzhi
   - name: 🚀 临时节点
     type: select
     use:
@@ -173,3 +180,7 @@ proxy-providers:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=JP,HK,TW,US,SG"
     path: ./Proxy/bihai
+  bihaifenzhi:
+    type: http
+    url: "https://suc.bihai.cf/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2Fxiaoyangdkj%2Fsubscribe%2Fmain%2Fproxies%2Fbihaifenzhi.txt&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini"
+    path: ./Proxy/bihaifenzhi
