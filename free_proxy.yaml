@@ -50,7 +50,6 @@ proxy-groups:
       - bdkeji
       - Jsnzk
       - freefq
-      - ShareCentrePro
       - bihaifenzhi
       - hkaa0
     url: 'http://www.gstatic.com/generate_204'
@@ -62,7 +61,6 @@ proxy-groups:
       - bdkeji
       - Jsnzk
       - freefq
-      - ShareCentrePro
       - bihaifenzhi
       - hkaa0
     url: 'http://www.gstatic.com/generate_204'
@@ -79,10 +77,6 @@ proxy-groups:
     type: select
     use:
       - Jsnzk
-  - name: ✈️ TG频道@ShareCentrePro
-    type: select
-    use:
-      - ShareCentrePro
   - name: ✈️ TG频道@hkaa0
     type: select
     use:
@@ -172,10 +166,6 @@ proxy-providers:
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FJsnzkpg%2FJsnzkpg%2FJsnzkpg%2FJsnzkpg&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2Flhl77%2Fsub-ini%2Fmain%2Ftsutsu-mini-gfw.ini&emoji=true&list=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&sort=false&new_name=true"
     path: ./Proxy/Jsnzk
-  ShareCentrePro:
-    type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgit-yusteven%2Fopenit%2Fmain%2Flong&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FSleepyHeeead%2Fsubconverter-config%2Fmaster%2Fremote-config%2Fspecial%2Fbasic.ini&emoji=true&list=true&udp=false&tfo=false&expand=true&scv=false&fdn=false&sort=false&new_name=true"
-    path: ./Proxy/ShareCentrePro
   hkaa0:
     type: http
     url: "https://git.io/JMRUF"
