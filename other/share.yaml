@@ -1,0 +1,5 @@
+proxies:
+    - { name: HK香港-01 | 直连 type: vmess, server: 18.163.119.6, port: 80, uuid: 19ab05be-031b-4a0c-9e02-285b4bc3a330, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: HK香港-02 | 中转, type: vmess, server: 20.205.5.87, port: 56333, uuid: 19ab05be-031b-4a0c-9e02-285b4bc3a330, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: KR韩国-01 | 直连, type: vmess, server: 13.209.9.219, port: 80, uuid: 19ab05be-031b-4a0c-9e02-285b4bc3a330, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: KR韩国-02 | 中转, type: vmess, server: 20.196.201.102, port: 49889, uuid: 19ab05be-031b-4a0c-9e02-285b4bc3a330, alterId: 0, cipher: auto, udp: true, network: ws }
