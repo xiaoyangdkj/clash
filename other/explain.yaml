@@ -1,4 +1,4 @@
 proxies:
   - {name: ◇本订阅为临时节点 不保证随时可用, server: 1.telegram.xyz, port: 33235, type: vmess, uuid: a1c5e4e5-dded-39c2-5357-e365cc298078, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 1.telegram.org}}}
-  - {name: ◇更新时间不固定 但以后会在这里说明, server: 2.telegram.org, port: 443, type: vmess, uuid: a1c5e4e5-dded-39c2-5357-e365cc298078, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 2.telegram.org}}}
+  - {name: ◇更新日q不固定 但以后会在这里说明, server: 2.telegram.org, port: 443, type: vmess, uuid: a1c5e4e5-dded-39c2-5357-e365cc298078, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 2.telegram.org}}}
   - {name: ◇欢迎加入TG群聊@sharevpn_chat, server: 3.telegram.org, port: 55899, type: vmess, uuid: a1c5e4e5-dded-39c2-5357-e365cc298078, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 3.telegram.org}}}
