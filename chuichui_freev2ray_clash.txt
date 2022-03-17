@@ -18,25 +18,29 @@ dns:
     - tls://dns.rubyfish.cn:853
     - https://1.1.1.1/dns-query
 proxies:
-  - {name: ✈️Telegram@cgtt134, server: tg.tgchuichui.xyz, port: 16297, type: trojan, password: PASSWALL, sni: tg.tgchuichui.xyz}
-  - {name: 🇭🇰 直连 | 香港001, server: hkt1.aead.ml, port: 443, type: trojan, password: cd739f34-ad37-433f-910c-7ef2d1a88f6b, sni: hkt1.aead.ml}
-  - {name: 🇭🇰 直连 | 香港002, server: hk1.aead.ml, port: 101, type: ss, cipher: aes-128-gcm, password: cd739f34-ad37-433f-910c-7ef2d1a88f6b}
-  - {name: 🇭🇰 直连 | 香港003, server: hk2.aead.ml, port: 101, type: ss, cipher: aes-128-gcm, password: cd739f34-ad37-433f-910c-7ef2d1a88f6b}
-  - {name: 🇭🇰 隧道 | 香港101, server: gz.mikuyun.xyz, port: 60011, type: ss, cipher: chacha20-ietf-poly1305, password: 9c4c94f8-9c46-426a-8da4-1690018c70c2}
-  - {name: 🇭🇰 隧道 | 香港102, server: gz.mikuyun.xyz, port: 60003, type: ss, cipher: chacha20-ietf-poly1305, password: 9c4c94f8-9c46-426a-8da4-1690018c70c2}
-  - {name: 🇭🇰 隧道 | 香港103, server: gz.mikuyun.xyz, port: 60004, type: ss, cipher: chacha20-ietf-poly1305, password: 9c4c94f8-9c46-426a-8da4-1690018c70c2}
-  - {name: 🇭🇰 直连 | 香港004, server: hk3.aead.ml, port: 101, type: ss, cipher: aes-128-gcm, password: cd739f34-ad37-433f-910c-7ef2d1a88f6b}
-  - {name: 🇹🇼 隧道 | 台湾101 | 动画疯, server: gz.mikuyun.xyz, port: 60010, type: ss, cipher: chacha20-ietf-poly1305, password: 9c4c94f8-9c46-426a-8da4-1690018c70c2}
-  - {name: 🇯🇵 隧道 | 日本101, server: gz.mikuyun.xyz, port: 60002, type: ss, cipher: chacha20-ietf-poly1305, password: 9c4c94f8-9c46-426a-8da4-1690018c70c2}
-  - {name: 🇯🇵 隧道 | 日本102, server: sh.mikuyun.xyz, port: 60006, type: ss, cipher: chacha20-ietf-poly1305, password: 9c4c94f8-9c46-426a-8da4-1690018c70c2}
-  - {name: 🇯🇵 隧道 | 日本103, server: gz.mikuyun.xyz, port: 60006, type: ss, cipher: chacha20-ietf-poly1305, password: 9c4c94f8-9c46-426a-8da4-1690018c70c2}
-  - {name: 🇯🇵 隧道 | 日本104, server: sh.mikuyun.xyz, port: 60007, type: ss, cipher: chacha20-ietf-poly1305, password: 9c4c94f8-9c46-426a-8da4-1690018c70c2}
-  - {name: 🇯🇵 隧道 | 日本105, server: gz.mikuyun.xyz, port: 60007, type: ss, cipher: chacha20-ietf-poly1305, password: 9c4c94f8-9c46-426a-8da4-1690018c70c2}
-  - {name: 🇸🇬 直连 | 新加坡001, server: sg1.aead.ml, port: 101, type: ss, cipher: aes-128-gcm, password: cd739f34-ad37-433f-910c-7ef2d1a88f6b}
-  - {name: 🇸🇬 隧道 | 新加坡101, server: sh.mikuyun.xyz, port: 60008, type: ss, cipher: chacha20-ietf-poly1305, password: 9c4c94f8-9c46-426a-8da4-1690018c70c2}
-  - {name: 🇸🇬 隧道 | 新加坡102, server: gz.mikuyun.xyz, port: 60008, type: ss, cipher: chacha20-ietf-poly1305, password: 9c4c94f8-9c46-426a-8da4-1690018c70c2}
-  - {name: 🇺🇸 隧道 | 美国101 | Disney, server: gz.mikuyun.xyz, port: 60009, type: ss, cipher: chacha20-ietf-poly1305, password: 9c4c94f8-9c46-426a-8da4-1690018c70c2}
-  - {name: 🇰🇷 隧道 | 韩国103, server: gz.mikuyun.xyz, port: 60001, type: ss, cipher: chacha20-ietf-poly1305, password: 9c4c94f8-9c46-426a-8da4-1690018c70c2}
+  - {name: ✈️Telegram@cgtt134, server: tg.tgchuichui.xyz, port: 16297, type: trojan, password: PASSWALL, sni: tg.tgchuichui.xyz, skip-cert-verify: false}
+  - {name: 请不要 外传订阅/用流量消耗器/恶意转发, server: tg.tgchuichui.xyz, port: 57920, type: trojan, password: DALAOQAQ, sni: tg.tgchuichui.xyz, skip-cert-verify: false}
+  - {name: 求放过qwq 孩子自购的节点, server: tg.tgchuichui.xyz, port: 31267, type: trojan, password: DALAOQAQ, sni: tg.tgchuichui.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 直连 | 香港001 | Telegram@cgtt134, server: hk1.aead.ml, port: 101, type: ss, cipher: aes-128-gcm, password: 3e1d8d57-d095-422b-9fc1-59123b78c29c}
+  - {name: 🇭🇰 直连 | 香港002 | Telegram@cgtt134, server: hk2.aead.ml, port: 101, type: ss, cipher: aes-128-gcm, password: 3e1d8d57-d095-422b-9fc1-59123b78c29c}
+  - {name: 🇭🇰 直连 | 香港003 | Telegram@cgtt134, server: hk3.aead.ml, port: 101, type: ss, cipher: aes-128-gcm, password: 3e1d8d57-d095-422b-9fc1-59123b78c29c}
+  - {name: 🇭🇰 隧道 | 香港101 | Telegram@cgtt134, server: gz.mikuyun.xyz, port: 60011, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇭🇰 隧道 | 香港102 | Telegram@cgtt134, server: gz.mikuyun.xyz, port: 60003, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇭🇰 隧道 | 香港103 | Telegram@cgtt134, server: gz.mikuyun.xyz, port: 60004, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇭🇰 隧道 | 香港104 | Telegram@cgtt134, server: gz.mikuyun.xyz, port: 60005, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇯🇵 隧道 | 日本101 | Telegram@cgtt134, server: gz.mikuyun.xyz, port: 60002, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇯🇵 隧道 | 日本102 | Telegram@cgtt134, server: gz.mikuyun.xyz, port: 60014, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇯🇵 隧道 | 日本103 | Telegram@cgtt134, server: sh.mikuyun.xyz, port: 60006, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇯🇵 隧道 | 日本104 | Telegram@cgtt134, server: gz.mikuyun.xyz, port: 60006, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇯🇵 隧道 | 日本105 | Telegram@cgtt134, server: sh.mikuyun.xyz, port: 60007, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇯🇵 隧道 | 日本106 | Telegram@cgtt134, server: gz.mikuyun.xyz, port: 60007, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇹🇼 隧道 | 台湾101 | Telegram@cgtt134, server: gz.mikuyun.xyz, port: 60010, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇸🇬 隧道 | 新加坡101 | Telegram@cgtt134, server: sh.mikuyun.xyz, port: 60008, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇸🇬 隧道 | 新加坡102 | Telegram@cgtt134, server: gz.mikuyun.xyz, port: 60008, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇸🇬 隧道 | 新加坡103 | Telegram@cgtt134, server: gz.mikuyun.xyz, port: 60013, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇺🇸 隧道 | 美国101 | Telegram@cgtt134, server: gz.mikuyun.xyz, port: 60009, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 隧道 | 爱尔兰101 | Telegram@cgtt134, server: gz.mikuyun.xyz, port: 60012, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
+  - {name: 🇰🇷 隧道 | 韩国101 | Telegram@cgtt134, server: gz.mikuyun.xyz, port: 60001, type: ss, cipher: chacha20-ietf-poly1305, password: ff121459-d0e2-49dc-a0a0-30eb7c10e30c}
 proxy-groups:
   - name: 🌐 全局选择
     type: select
@@ -49,29 +53,31 @@ proxy-groups:
     type: select
     proxies:
       - ✈️Telegram@cgtt134
-      - 🇭🇰 直连 | 香港001
-      - 🇭🇰 直连 | 香港002
-      - 🇭🇰 直连 | 香港003
-      - 🇭🇰 隧道 | 香港101
-      - 🇭🇰 隧道 | 香港102
-      - 🇭🇰 隧道 | 香港103
-      - 🇭🇰 直连 | 香港004
-      - 🇹🇼 隧道 | 台湾101 | 动画疯
-      - 🇯🇵 隧道 | 日本101
-      - 🇯🇵 隧道 | 日本102
-      - 🇯🇵 隧道 | 日本103
-      - 🇯🇵 隧道 | 日本104
-      - 🇯🇵 隧道 | 日本105
-      - 🇸🇬 直连 | 新加坡001
-      - 🇸🇬 隧道 | 新加坡101
-      - 🇸🇬 隧道 | 新加坡102
-      - 🇺🇸 隧道 | 美国101 | Disney
-      - 🇰🇷 隧道 | 韩国103
+      - 请不要 外传订阅/用流量消耗器/恶意转发
+      - 求放过qwq 孩子自购的节点
+      - 🇭🇰 直连 | 香港001 | Telegram@cgtt134
+      - 🇭🇰 直连 | 香港002 | Telegram@cgtt134
+      - 🇭🇰 直连 | 香港003 | Telegram@cgtt134
+      - 🇭🇰 隧道 | 香港101 | Telegram@cgtt134
+      - 🇭🇰 隧道 | 香港102 | Telegram@cgtt134
+      - 🇭🇰 隧道 | 香港103 | Telegram@cgtt134
+      - 🇭🇰 隧道 | 香港104 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本101 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本102 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本103 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本104 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本105 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本106 | Telegram@cgtt134
+      - 🇹🇼 隧道 | 台湾101 | Telegram@cgtt134
+      - 🇸🇬 隧道 | 新加坡101 | Telegram@cgtt134
+      - 🇸🇬 隧道 | 新加坡102 | Telegram@cgtt134
+      - 🇸🇬 隧道 | 新加坡103 | Telegram@cgtt134
+      - 🇺🇸 隧道 | 美国101 | Telegram@cgtt134
+      - 隧道 | 爱尔兰101 | Telegram@cgtt134
+      - 🇰🇷 隧道 | 韩国101 | Telegram@cgtt134
   - name: 🎥 海外流媒体
     type: select
     proxies:
-      - 🇹🇼 隧道 | 台湾101 | 动画疯
-      - 🇺🇸 隧道 | 美国101 | Disney
       - 🚀 手动切换
   - name: 🎮 游戏平台
     type: select
@@ -85,48 +91,56 @@ proxy-groups:
     tolerance: 50
     proxies:
       - ✈️Telegram@cgtt134
-      - 🇭🇰 直连 | 香港001
-      - 🇭🇰 直连 | 香港002
-      - 🇭🇰 直连 | 香港003
-      - 🇭🇰 隧道 | 香港101
-      - 🇭🇰 隧道 | 香港102
-      - 🇭🇰 隧道 | 香港103
-      - 🇭🇰 直连 | 香港004
-      - 🇹🇼 隧道 | 台湾101 | 动画疯
-      - 🇯🇵 隧道 | 日本101
-      - 🇯🇵 隧道 | 日本102
-      - 🇯🇵 隧道 | 日本103
-      - 🇯🇵 隧道 | 日本104
-      - 🇯🇵 隧道 | 日本105
-      - 🇸🇬 直连 | 新加坡001
-      - 🇸🇬 隧道 | 新加坡101
-      - 🇸🇬 隧道 | 新加坡102
-      - 🇺🇸 隧道 | 美国101 | Disney
-      - 🇰🇷 隧道 | 韩国103
+      - 请不要 外传订阅/用流量消耗器/恶意转发
+      - 求放过qwq 孩子自购的节点
+      - 🇭🇰 直连 | 香港001 | Telegram@cgtt134
+      - 🇭🇰 直连 | 香港002 | Telegram@cgtt134
+      - 🇭🇰 直连 | 香港003 | Telegram@cgtt134
+      - 🇭🇰 隧道 | 香港101 | Telegram@cgtt134
+      - 🇭🇰 隧道 | 香港102 | Telegram@cgtt134
+      - 🇭🇰 隧道 | 香港103 | Telegram@cgtt134
+      - 🇭🇰 隧道 | 香港104 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本101 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本102 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本103 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本104 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本105 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本106 | Telegram@cgtt134
+      - 🇹🇼 隧道 | 台湾101 | Telegram@cgtt134
+      - 🇸🇬 隧道 | 新加坡101 | Telegram@cgtt134
+      - 🇸🇬 隧道 | 新加坡102 | Telegram@cgtt134
+      - 🇸🇬 隧道 | 新加坡103 | Telegram@cgtt134
+      - 🇺🇸 隧道 | 美国101 | Telegram@cgtt134
+      - 隧道 | 爱尔兰101 | Telegram@cgtt134
+      - 🇰🇷 隧道 | 韩国101 | Telegram@cgtt134
   - name: 🛠️ 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - ✈️Telegram@cgtt134
-      - 🇭🇰 直连 | 香港001
-      - 🇭🇰 直连 | 香港002
-      - 🇭🇰 直连 | 香港003
-      - 🇭🇰 隧道 | 香港101
-      - 🇭🇰 隧道 | 香港102
-      - 🇭🇰 隧道 | 香港103
-      - 🇭🇰 直连 | 香港004
-      - 🇹🇼 隧道 | 台湾101 | 动画疯
-      - 🇯🇵 隧道 | 日本101
-      - 🇯🇵 隧道 | 日本102
-      - 🇯🇵 隧道 | 日本103
-      - 🇯🇵 隧道 | 日本104
-      - 🇯🇵 隧道 | 日本105
-      - 🇸🇬 直连 | 新加坡001
-      - 🇸🇬 隧道 | 新加坡101
-      - 🇸🇬 隧道 | 新加坡102
-      - 🇺🇸 隧道 | 美国101 | Disney
-      - 🇰🇷 隧道 | 韩国103
+      - 请不要 外传订阅/用流量消耗器/恶意转发
+      - 求放过qwq 孩子自购的节点
+      - 🇭🇰 直连 | 香港001 | Telegram@cgtt134
+      - 🇭🇰 直连 | 香港002 | Telegram@cgtt134
+      - 🇭🇰 直连 | 香港003 | Telegram@cgtt134
+      - 🇭🇰 隧道 | 香港101 | Telegram@cgtt134
+      - 🇭🇰 隧道 | 香港102 | Telegram@cgtt134
+      - 🇭🇰 隧道 | 香港103 | Telegram@cgtt134
+      - 🇭🇰 隧道 | 香港104 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本101 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本102 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本103 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本104 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本105 | Telegram@cgtt134
+      - 🇯🇵 隧道 | 日本106 | Telegram@cgtt134
+      - 🇹🇼 隧道 | 台湾101 | Telegram@cgtt134
+      - 🇸🇬 隧道 | 新加坡101 | Telegram@cgtt134
+      - 🇸🇬 隧道 | 新加坡102 | Telegram@cgtt134
+      - 🇸🇬 隧道 | 新加坡103 | Telegram@cgtt134
+      - 🇺🇸 隧道 | 美国101 | Telegram@cgtt134
+      - 隧道 | 爱尔兰101 | Telegram@cgtt134
+      - 🇰🇷 隧道 | 韩国101 | Telegram@cgtt134
   - name: 🍀 绿坝-花季护航
     type: select
     proxies:
